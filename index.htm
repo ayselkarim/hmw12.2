@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> 
+          <img src="swıper slıder/img1.jpg" />
+        </div>
+        <div class="swiper-slide"> 
+          <img src="swıper slıder/img2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="swıper slıder/img3.jpg" />
+        </div>
+
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: true,
+        },
+      });
+    </script>  
+</body>
+</html>
